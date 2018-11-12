@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditData"
+    android:background="#d5f9f7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUserID"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/warni">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtname"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#0d0d0d"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/warni">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtpass"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#0d0d0d"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Layout_alamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/warni">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtalamat"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:hint="Alamat"
+        android:inputType="textPersonName"
+        android:textColor="#0d0d0d"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsave"
+        android:background="#1829e3"
+        android:text="Save"
+        android:textColor="#fffdfd"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="right"/>
+    <ProgressBar
+        android:id="@+id/progressBarmutar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="1"
+        android:max="100"
+        android:visibility="invisible"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuUtama"
+    android:background="#2bf7f7">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e60e0e"
+        android:textStyle="italic"
+        android:text="Menu Utama"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:id="@+id/menuutama"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fffdfd"
+        android:textStyle="italic"
+        android:background="#1829e3"
+        android:id="@+id/Lihatdata"
+        android:text="Lihat Data"
+        android:textSize="30dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="1"
+        android:max="100"
+        android:visibility="invisible"/>
+
+</LinearLayout>

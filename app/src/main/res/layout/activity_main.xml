@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#d5f9f7">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@drawable/login2" />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Layout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/warni">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textusername"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#0d0d0d"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/Layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/warni">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textpassword"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#0d0d0d"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnlogin"
+        android:text="Login"
+        android:textColor="#fffdfd"
+        android:background="#1829e3"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnregistrasi"
+        android:background="#d5f9f7"
+        android:text="Registrasi"
+        android:textColor="#1829e3"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarmutar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:progress="1"/>
+</LinearLayout>
